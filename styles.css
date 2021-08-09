@@ -1,0 +1,171 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(110deg,#e2c38f,#d66877);
+    color: white;
+    font-size: 1rem;
+}
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh
+}
+h1{
+  text-shadow:2px 2px 2px #bd810b;
+  
+}
+form{
+    min-height: 14vh;
+}
+form button,form input{
+
+    font-size: 1.3rem;
+   background-color: white;
+    padding: 0.25rem;
+    border: none;
+}
+form input{
+    font-size: 1.3rem;
+    color: rgb(160, 118, 41);
+    padding: 0.25rem;
+}
+form button{
+    font-size: 1.3rem;
+    color: white;
+    background-color:#d66877;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+form button:hover{
+  
+    background-color: white;
+    color: #d66877;
+   
+    
+}
+
+form input:hover{
+    color: white;
+    background-color:#d66877;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+form input:focus{
+  
+   outline: transparent;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo-list{
+    min-width: 20%;
+    list-style: none;
+
+    
+}
+.toDo{
+    border: 1px solid black;
+    background-color: white;
+    margin: 0.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.toDo li{
+    flex: 1;
+    color: black;
+    padding:0rem 0.5rem;
+    
+}
+
+.checkButton,.trashButton{
+    padding: 0.5rem;
+    background-color: rgb(48, 236, 48);
+border: none;
+
+
+}
+
+
+.trashButton{
+    background-color: rgb(255, 52, 52);
+}
+
+.checkButton:hover,.trashButton:hover{
+    transition: all 0.3s ease;
+    background-color:white;
+    cursor: pointer;
+}
+    
+.completed{
+text-decoration: line-through;
+opacity: 0.5;
+
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+opacity: 0;}
+
+select{
+-webkit-appearance:none;
+-moz-appearance: none;
+appearance: none;
+outline:none;
+border: none;
+
+}
+select{width: 7rem;
+    cursor: pointer;
+    color: #ff6f47;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+.select{
+    overflow: hidden;
+    margin: 1rem;
+    position: relative;
+}
+.select::after{
+    content: "a";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    color:white;
+    background-color: red;
+    pointer-events:none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after{
+    background-color:white;
+    color: red;
+
+}
+
+#text{
+    margin: 0.25rem auto;
+    background-color: #d66877;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 35vh;
+    text-align: center;
+}
+
+
+
+
